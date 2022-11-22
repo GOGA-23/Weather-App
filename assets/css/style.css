@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #1e9cf0; */
+  background-image: url("https://img.freepik.com/free-photo/beautiful-sea-ocean-with-cloud-blue-sky_74190-6828.jpg?w=996&t=st=1669099429~exp=1669100029~hmac=acd1af6369c3785702f90bc0a3c1541b6ed9174d4ac4aa0ccef026b53ea1dc1b");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CSS styles for container  */
+
+.container {
+  max-width: 350px;
+  width: 100%;
+  padding: 15px;
+  background-color: #e6ecf5;
+  border-radius: 10px;
+}
+
+/* CSS styles for container header  */
+
+.container header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.container .prev-btn {
+  width: 0px;
+  height: 0px;
+}
+
+/* CSS styles for container toggle */
+
+.container.active .prev-btn {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.container header h2 {
+  margin: 18px 5px;
+  color: #1e9cf0;
+  border-bottom: 4px solid #1e9cf0;
+  border-radius: 10px;
+}
+
+/* CSS styles for section-1 input-data toggle */
+
+.container.active .input-data {
+  display: none;
+}
+
+.input-data input,
+.input-data button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.input-data input {
+  text-align: center;
+  padding: 0 5px;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.input-data input:focus,
+.input-data input:valid {
+  border: 2px solid #26add6;
+  border-radius: 5px;
+}
+
+.input-data button {
+  color: aliceblue;
+  background-color: #1e9cf0;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.input-data button i {
+  margin: 0 5px;
+}
+
+.input-data .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #dfdcdc;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-data .separator::before {
+  content: "OR";
+  padding: 0 10px;
+  font-size: 12px;
+  color: #969393;
+  background: #e6ecf5;
+}
+
+.input-data .info-txt {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 15px 0;
+}
+
+.info-txt.error {
+  display: block;
+  background-color: #f7bfbf;
+  color: #c21212;
+  border: 1px solid #f88383;
+}
+
+.info-txt.success {
+  display: block;
+  background-color: #66eb92;
+  color: #0a9749;
+  border: 1px solid #4ce754;
+}
+
+/* CSS styles for section-2 weather-field  */
+
+.container .weather-field {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS styles for section-2 weather-field toggle */
+
+.container.active .weather-field {
+  display: flex;
+}
+
+.weather-field .weather-img {
+  height: 150px;
+  width: 150px;
+  margin: 5px 75px;
+}
+
+.weather-field :where(.weather, .weather-type, .weather-loc-name) {
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+}
+
+.weather-field .weather {
+  font-size: 35px;
+}
+
+.weather-field .weather-type {
+  color: #0b9bb4;
+  font-weight: 700;
+}
+
+.weather-field .weather-loc-name i {
+  color: #0a5f97;
+  margin: 0 5px;
+}
+
+.weather-field .weather-loc-name span {
+  font-size: 17px;
+}
+
+.weather-field .temp-img,
+.weather-field .hum-img {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+}
+
+.weather-field .weather-temp-hum {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12px 6px;
+  padding: 5px;
+  border-top: 1px solid lightblue;
+}
+
+.weather-field :where(.weather-temp, .weather-hum) {
+  display: inline-flex;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.weather-temp span,
+.weather-hum span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* end of all CSS style work  */

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/831/831268.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/aba6fa6c75.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <header>
+        <img
+          class="prev-btn"
+          src="./assets/images/previous.png"
+          alt="prev-btn"
+        />
+        <h2>Weather App</h2>
+      </header>
+
+      <!-- end of header part -->
+
+      <!-- section of input-data -->
+      <section class="input-data">
+        <p class="info-txt"></p>
+        <input
+          type="text"
+          id="input-field"
+          placeholder="Enter place name"
+          spellcheck="false"
+          required
+        />
+        <div class="separator"></div>
+        <button>
+          <i class="fa-solid fa-map-location-dot"></i>Get device location
+        </button>
+      </section>
+
+      <!-- end of input-data section -->
+
+      <!-- section of weather-field -->
+      <section class="weather-field">
+        <img
+          class="weather-img"
+          src="./assets/images/weather.svg"
+          alt="Weather-image"
+        />
+        <div class="weather">
+          <span>23°C</span>
+        </div>
+        <div class="weather-type">
+          <p>Broken Clouds</p>
+        </div>
+        <div class="weather-loc-name">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <span>Chennai,TN</span>
+        </div>
+        <div class="weather-temp-hum">
+          <div class="weather-temp">
+            <img
+              class="temp-img"
+              src="https://cdn-icons-png.flaticon.com/512/4679/4679228.png"
+              alt=""
+            />
+            <div class="temp">
+              <span>23°C</span>
+              <p>Feels like</p>
+            </div>
+          </div>
+          <div class="weather-hum">
+            <img
+              class="hum-img"
+              src="https://cdn-icons-png.flaticon.com/512/6631/6631820.png"
+              alt=""
+            />
+            <div class="hum-temp">
+              <span>95%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of section weather-field -->
+    </div>
+    <!-- end of container  -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
+
+<!-- end of HTML -->
