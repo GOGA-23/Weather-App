@@ -7,10 +7,10 @@ CSS
 Javascript
 Open Weather API
 
-# Create .env file
-Create a .env file to get API key. Example below:
+# Getting Open Weather Api Key 
+getting key from open weather api
 API_KEY = "KEY"
 
 
 # Deployed Website Link here: 
-  https://news-website-xtcr.onrender.com/
+  https://goga-23.github.io/Weather-App/
