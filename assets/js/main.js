@@ -76,13 +76,13 @@ function weatherInfo(details) {
 
     // passing all the properties data into their inner text or inner html to execute value on screen
 
-    containerEl.querySelector(".weather span").innerHTML = `${temp}°C`;
-    containerEl.querySelector(".temp span").innerHTML = `${feels_like}°C`;
-    containerEl.querySelector(".hum-temp span").innerHTML = `${humidity}%`;
-    containerEl.querySelector(".weather-type p").innerHTML = description;
+    containerEl.querySelector(".weather span").innerText = `${temp}°C`;
+    containerEl.querySelector(".temp span").innerText = `${feels_like}°C`;
+    containerEl.querySelector(".hum-temp span").innerText = `${humidity}%`;
+    containerEl.querySelector(".weather-type p").innerText = description;
     containerEl.querySelector(
       ".weather-loc-name span"
-    ).innerHTML = `${city}, ${country}`;
+    ).innerText = `${city}, ${country}`;
 
     // switching the weather type according api id's returns to it
 
